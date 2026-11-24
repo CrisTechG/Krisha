@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Krisha· Asistente de informática</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<aside id="side">
+  <div class="brand"><div class="logo">K</div>Krisha</div>
+  <button class="new" id="nuevo">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+    Nuevo chat
+  </button>
+  <div class="group">Hoy</div>
+  <button class="item">¿Qué es la memoria RAM?</button>
+  <button class="item">Cómo crear una página web</button>
+  <div class="group">Ayer</div>
+  <button class="item">Diferencia entre HTML y CSS</button>
+  <button class="item">Qué es un virus informático</button>
+  <div class="group">Últimos 7 días</div>
+  <button class="item">Aprender a programar desde cero</button>
+  <div class="spacer"></div>
+  <div class="user"><div class="avatar">Yo</div>Mi cuenta</div>
+</aside>
+
+<main>
+  <header>
+    <button class="menu" id="menu" aria-label="Abrir menú">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <button class="model">Krisha <span>▾</span></button>
+  </header>
+
+  <div id="chat">
+    <div class="hero" id="hero">
+      <div class="logo">K</div>
+      <h1>¡Hola! Soy Krisha</h1>
+      <p>Tu asistente para aprender informática. ¿Qué quieres saber hoy?</p>
+      <div class="chips">
+        <button class="chip">¿Qué es la memoria RAM?</button>
+        <button class="chip">Explícame qué es HTML</button>
+        <button class="chip">¿Qué es un virus informático?</button>
+        <button class="chip">¿Cómo creo una contraseña segura?</button>
+        <button class="chip">Diferencia entre hardware y software</button>
+        <button class="chip">¿Qué es la inteligencia artificial?</button>
+      </div>
+    </div>
+    <div class="wrap" id="msgs" hidden></div>
+  </div>
+
+  <div class="composer">
+    <div class="box">
+      <button class="plus" aria-label="Adjuntar">+</button>
+      <textarea id="txt" rows="1" placeholder="Pregúntale a Krisha sobre informática"></textarea>
+      <button class="send" id="send" disabled aria-label="Enviar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+      </button>
+    </div>
+    <p class="note">Krisha puede cometer errores. Verifica la información importante.</p>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
